@@ -3,7 +3,7 @@
 ;   qemu -hda sample01a
 BITS 16
 Main:
-    hlt
+    jmp Main
 times 510 - ($-$$) db 0
 dw 0xAA55
 
